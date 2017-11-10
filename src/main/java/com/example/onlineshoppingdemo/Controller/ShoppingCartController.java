@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/shoppingCart")
 public class ShoppingCartController {
 
-    @Autowired
+@Autowired
     private ShoppingCartService shoppingCartService;
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")

@@ -17,13 +17,13 @@ import java.util.List;
 @Transactional
 public class ShoppingCartService {
 
-    @Autowired
+@Autowired
     private ProductRepository productRepository;
 
-    @Autowired
+@Autowired
     private UserRepository userRepository;
 
-    @Autowired
+@Autowired
     private ShoppingCartRepository shoppingCartRepository;
 
     public ShoppingCart saveProducts(ShoppingCartDTO shoppingCartDTO) {

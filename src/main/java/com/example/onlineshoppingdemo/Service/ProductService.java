@@ -13,13 +13,13 @@ import java.util.List;
 @Transactional
 public class ProductService{
 
-    @Autowired
+@Autowired
     private ProductRepository productRepository;
 
     private static List<Product> products = new ArrayList<>();
 
     static {
-        products.add(new Product(35.75d,1000,"Pears baby soap for Kids","Soap"));
+        products.add(new Product(35.75d,1000,"With 3D Touch, Live Photos, 7000 series aluminium, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you'll see how with iPhone 6s, the only thing that's changed is everything.","Iphone"));
         products.add(new Product(45.50d,500,"Signal Tooth Brushes Size in (L, M, S)","Tooth Brushe"));
         products.add(new Product(1500.0d,100,"Casual Shirt imported from France","Shirt"));
         products.add(new Product(1000.0d,400,"Leather bag imported from USA ","Office Bag"));

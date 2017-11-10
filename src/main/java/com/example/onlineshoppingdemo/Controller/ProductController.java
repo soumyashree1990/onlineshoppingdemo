@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
 
-    @Autowired
+@Autowired
     private ProductService productService;
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")

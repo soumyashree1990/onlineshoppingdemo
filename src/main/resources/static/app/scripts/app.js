@@ -38,7 +38,7 @@ angular
                 controllerAs: 'cart',
                 resolve: {
                     shoppingCart: function ($http) { //  data assign to shoppingCart list
-                        return $http.get("http://localhost:8080/shoppingcart/shoppingCart").then(function (response) {
+                        return $http.get("http://localhost:8080/onlineshoppingdemo/shoppingCart").then(function (response) {
                             return response.data;
                         })
                     }
@@ -51,7 +51,44 @@ angular
                 controllerAs: 'history',
                 resolve: {
                     history: function ($http) {
-                        return $http.get("http://localhost:8080/shoppingcart/history").then(function (response) {
+                        return $http.get("http://localhost:8080/onlineshoppingdemo/history").then(function (response) {
+                            return response.data;
+                        })
+                    }
+                }
+            })
+            .when('/about', {
+                templateUrl: 'app/views/about.html',
+                controller: 'AboutCtrl',
+                controllerAs: 'about',
+                resolve: {
+                    history: function ($http) {
+                        return $http.get("http://localhost:8080/onlineshoppingdemo/about").then(function (response) {
+                            return response.data;
+                        })
+                    }
+                }
+            })
+            .when('/login', {
+                templateUrl: 'app/views/login.html',
+                controller: 'LoginCtrl',
+                controllerAs: 'Login',
+                resolve: {
+                    history: function ($http) {
+                        return $http.get("http://localhost:8080/onlineshoppingdemo/login").then(function (response) {
+                            return response.data;
+                        })
+                    }
+                }
+            })
+
+            .when('/account', {
+                templateUrl: 'app/views/account.html',
+                controller: 'accountCtrl',
+                controllerAs: 'account',
+                resolve: {
+                    history: function ($http) {
+                        return $http.get("http://localhost:8080/onlineshoppingdemo/account").then(function (response) {
                             return response.data;
                         })
                     }

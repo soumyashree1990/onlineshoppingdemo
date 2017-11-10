@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/history")
 public class HistoryController {
 
-    @Autowired
+@Autowired
     private ShoppingCartService shoppingCartService;
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
